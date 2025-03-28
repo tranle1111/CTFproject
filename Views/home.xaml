@@ -1,0 +1,33 @@
+﻿<Window x:Class="CTFproject.home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CTFproject"
+        mc:Ignorable="d"
+        Title="home" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="89" Margin="20,23,0,0" VerticalAlignment="Top" Width="755" Background="#FF0F4780">
+            <Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="home_bt" Content="Home" Height="44" Width="93" Background="#FFD700" FontWeight="Bold" Click="home_bt_Click"/>
+                    <Button x:Name="rules_bt" Content="Rules" Height="44" Width="93" Margin="10,0,0,0" Background="#FFFFFF" Click="rules_bt_Click"/>
+                    <Button x:Name="scoreboard_bt" Content="Scoreboard" Height="44" Width="93" Margin="10,0,0,0" Background="#FFFFFF" Click="scoreboard_bt_Click"/>
+                    <Button x:Name="challenges_bt" Content="Challenges" Height="44" Width="93" Margin="10,0,0,0" Background="#FFFFFF" Click="challenges_bt_Click"/>
+                </StackPanel>
+                <Button x:Name="logout_bt" Content="Logout" Height="30" Width="70" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" Click="logout_bt_Click"/>
+            </Grid>
+        </Border>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100,0,0" Width="600">
+            <TextBlock Text="Welcome to CTF PHENIS" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White" TextWrapping="Wrap"/>
+            <TextBlock Text="Đây là trong thông tin chính thức của Câu lạc bộ yêu an toàn thông tin Phenikaa" FontSize="16" TextAlignment="Center" Margin="0,10,0,0" Foreground="White" TextWrapping="Wrap"/>
+            <TextBlock Text="Chúng tôi tự hào giới thiệu đến bạn cuộc thi CTF Phenikaa - một cuộc thi an toàn thông tin dành cho tất cả các bạn sinh viên trên toàn quốc." FontSize="16" TextAlignment="Center" Margin="0,10,0,0" Foreground="White" TextWrapping="Wrap"/>
+            <TextBlock Text="Đến với CTF Phenikaa, bạn sẽ được trải nghiệm những thử thách bảo mật thông tin thú vị, hấp dẫn và đầy thách thức. Hãy tham gia ngay để có cơ hội nhận những phần quà hấp dẫn từ BTC." FontSize="16" TextAlignment="Center" Margin="0,10,0,0" Foreground="White" TextWrapping="Wrap"/>
+            <Button x:Name="explore_challenges_bt" Content="Explore Challenges" Height="44" Width="200" Margin="0,20,0,0" HorizontalAlignment="Center" Background="White" Click="explore_challenges_bt_Click"/>
+        </StackPanel>
+        <TextBlock Text="© 2025 PHENIKAA INFORMATION SECURITY CLUB. All Rights Reserved." FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="White"/>
+    </Grid>
+</Window>
